@@ -1,0 +1,2 @@
+﻿Get-WinEvent -LogName Security | Where-Object { $_.Id -eq 4625 }
+Get-WinEvent -LogName Security | Where-Object { $_.Id -eq 4625 } | Export-Csv "C:\Users\Parashar11\Powershell\failed_logins.csv" -NoTypeInformation

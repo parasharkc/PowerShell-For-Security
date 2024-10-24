@@ -1,0 +1,2 @@
+﻿Get-WmiObject -Class Win32_Product | Select-Object Name, Version, Vendor
+Get-WmiObject -Class Win32_Product | Select-Object Name, Version, Vendor | Export-Csv -Path "C:\Users\Parashar11\Powershell\installed_software.csv" -NoTypeInformation
